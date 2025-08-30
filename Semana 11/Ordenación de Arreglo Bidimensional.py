@@ -9,18 +9,18 @@ matriz = [
 ]
 
 # Función para ordenar una fila de manera ascendente utilizando Bubble Sort
-def bubble_sort(fila):
+def bubble_sort(fila): 
     n = len(fila)
-    for i in range(n - 1):
+    for i in range(n - 1): 
         for j in range(n - i - 1):
-            if fila[j] > fila[j + 1]:
+            if fila[j] > fila[j + 1]: 
                 fila[j], fila[j + 1] = fila[j + 1], fila[j]  # Intercambiar valores
     return fila
-
+ 
 # Función para mostrar la matriz
 def mostrar_matriz(matriz):
     for fila in matriz:
-        print(fila)
+        print(fila) 
 
 # Mostrar la matriz original
 print("\nMatriz Original:")
