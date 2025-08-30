@@ -19,7 +19,7 @@ def buscar_valor(matriz, valor):
                 return (i, j)  # Devuelve la posición una vez que se encuentra el valor
     return None  # Sale del bucle si no encuentra el valor
 
-# Llamamos a la función
+# Llamamos a la función 
 posicion = buscar_valor(matriz, valor_buscado)
 
 # Mostrar resultado, verificando si se encontró el valor y su posición
