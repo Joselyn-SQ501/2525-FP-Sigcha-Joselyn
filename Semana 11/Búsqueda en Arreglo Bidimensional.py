@@ -13,7 +13,7 @@ valor_buscado = 50
 
 # Función para buscar un valor en la matriz
 def buscar_valor(matriz, valor):
-    for i in range(len(matriz)):         # Recorre filas
+    for i in range(len(matriz)):          # Recorre filas
         for j in range(len(matriz[i])):  # Recorre columnas
             if matriz[i][j] == valor:
                 return (i, j)  # Devuelve la posición una vez que se encuentra el valor
