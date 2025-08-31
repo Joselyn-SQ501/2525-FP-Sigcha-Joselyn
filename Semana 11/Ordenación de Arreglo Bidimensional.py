@@ -26,12 +26,27 @@ def mostrar_matriz(matriz):
 print("\nMatriz Original:")
 mostrar_matriz(matriz)
 
-# Ordenar cada fila de la matriz utilizando Bubble Sort
-for fila in matriz:
-    bubble_sort(fila)
+# Opciones o instrucciones al usuario sobre la fila o filas que el usuario quiere ordenar
+print("\n👉 OPCIONES:")
+print("   - Digita el número de la fila (0, 1 o 2) para ordenarla.")
+print("   - Digita -1 para ordenar todas las filas.")
+
+# Preguntar al usuario qué fila quiere ordenar
+opcion = int(input("\n¿Qué fila deseas ordenar? "))
+
+# Ordenar las filas utilizando Bubble Sort según la elección del usuario
+if opcion == -1:  # Ordenar todas las filas
+    for fila in matriz:
+        bubble_sort(fila)
+    print("\n✅ Todas las filas fueron ordenadas ascendentemente.")
+elif 0 <= opcion < len(matriz):  # Ordenar una fila específica
+    bubble_sort(matriz[opcion])
+    print(f"\n✅ La fila {opcion} fue ordenada ascendentemente.")
+else:
+    print("\n⚠️ Opción no válida. No se ordenó ninguna fila de la matriz.")
 
 # Mostrar la matriz ordenada
-print("\nMatriz con las filas ordenadas ascendentemente:")
+print("\nMatriz resultante:")
 mostrar_matriz(matriz)
 
 

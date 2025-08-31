@@ -8,8 +8,13 @@ matriz = [
     [40, 50, 60]
 ]
 
-# Valor que estamos buscando
-valor_buscado = 50
+# Mostrar la matriz
+print("\n📋 Matriz:")
+for i in matriz:
+    print(i)
+
+# Pedir al usuario que digite el número a buscar
+valor_buscado = int(input("\n👉 Digita el número que deseas buscar en la matriz: "))
 
 # Función para buscar un valor en la matriz
 def buscar_valor(matriz, valor):
@@ -17,7 +22,7 @@ def buscar_valor(matriz, valor):
         for j in range(len(matriz[i])):  # Recorre columnas
             if matriz[i][j] == valor:
                 return (i, j)  # Devuelve la posición una vez que se encuentra el valor
-    return None  # Sale del bucle si no encuentra el valor
+    return None  # Sale si no encuentra el valor
 
 # Llamamos a la función 
 posicion = buscar_valor(matriz, valor_buscado)
