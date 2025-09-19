@@ -15,18 +15,19 @@ def calcular_descuento(monto_compra, porcentaje_descuento = 10):
 
 # Programa principal
 if __name__ == "__main__":
-    # Primera llamada: el usuario ingresa el monto de su compra
+
+    # El usuario ingresa el monto de su compra
     monto1 = float(input("\n💰 Ingresa el monto de tu primera compra: $ "))
     # Mensaje al usuario sobre el % de descuento por defecto para su primera compra.
     print(f"\n👁‍ El porcentaje de descuento para tu primera compra es del 10% por defecto")
-    descuento1 = calcular_descuento(monto1)  # Llamada a la función que usa el 10% de descuento por defecto para el cálculo
+    descuento1 = calcular_descuento(monto1)  # Primera llamada a la función que usa el 10% de descuento por defecto para el cálculo
     total1 = monto1 - descuento1 #Operación para calcular el monto final a pagar
     # Muestra los resultados obtenidos de la llamada a la función junto con los datos solicitados.
     print(f"\n🛒 Compra 1 -> Monto: ${monto1}. Descuento: ${descuento1:.2f}. Total a pagar: ${total1:.2f}")
 
     print("-" * 50) #Decoración para separar los datos de cada compra
 
-    # Segunda llamada: usuario ingresa monto + porcentaje deseado
+    # El usuario ingresa el monto de su compra
     monto2 = float(input("\n💰 Ingresa el monto de tu segunda compra: $ "))
     # El usuario ingresa el % de descuento
     porcentaje = float(input("\n🏷️ Ingrese el porcentaje de descuento que se aplicará en tu compra: % "))
