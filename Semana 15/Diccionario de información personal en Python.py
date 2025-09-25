@@ -8,14 +8,17 @@ informacion_personal = {
     "Ciudad": "Guayaquil",
     "Profesion": "Desarrollador"
 }
-# Imprimir el diccionario original
-print(f"\nDiccionario Original:\n{informacion_personal}")
+print("")
+print(f"\nDiccionario Original:")
+print("-------------------------------")
+for clave, valor in informacion_personal.items():
+    print(f"{clave}: {valor}")
 
-#Acceder al valor de la clave "ciudad" y modificarlo
+#Acceder al valor de la clave "ciudad" y modificarlo por otra ciudad
 informacion_personal["Ciudad"] = "Quito"
 
-#Agregar una nueva clave-valor que represente la "profesion"
-informacion_personal["Ocupación"] = informacion_personal["Profesion"]
+#Agregar una nueva clave-valor que represente la "Profesion"
+informacion_personal["Ocupacion"] = "Freelancer"
 
 #Verificar si la clave "Telefono" existe
 if "Telefono" in informacion_personal:
@@ -28,6 +31,10 @@ else:
 del informacion_personal["Edad"]
 
 # Imprimir el diccionario final
-print(f"\nDiccionario final resultante:\n{informacion_personal}")
+print("")
+print(f"\nDiccionario final resultante:")
+print("-------------------------------")
+for clave, valor in informacion_personal.items():
+    print(f"{clave}: {valor}")
 
 print("\n😺¡Buen día!✨")
