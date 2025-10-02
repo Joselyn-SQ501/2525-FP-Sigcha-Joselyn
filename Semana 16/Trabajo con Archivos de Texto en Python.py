@@ -33,7 +33,7 @@ print("\nContenido línea por línea usando readline():\n")
 linea = archivo.readline()  # Leemos la primera línea
 while linea != "":           # Mientras no lleguemos al final del archivo
     print(linea.strip())     # Mostramos la línea sin el salto de línea adicional
-    linea = archivo.readline()  # Leemos la siguiente línea
+    linea = archivo.readline()  # Leemos la siguiente línea del archivo
 
 # Cerramos el archivo después de leer
 archivo.close()
